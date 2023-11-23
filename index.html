@@ -77,7 +77,8 @@
     </span>
     <ul>
       <li>Studied spectrum occupancy between 2.7GHz and 2.9GHz along with details of weather radar operations</li>
-      <li>Developed automated radio sample collection system using SDRs in the POWDER platform</li>
+      <li>Developed automated radio sample collection system using cronjobs, bash scripts, and SDRs in the POWDER platform</li>
+      <li>Engineered high-performance C code to process files containing raw IQ samples on the order of terabytes</li>
       <li>Created workflow to visualize and analyze collected radio IQ samples looking for spectrum-sharing opportunities</li>
     </ul>
 </p>
@@ -156,6 +157,8 @@
   <li>EAGLE</li>
   <li>GDB</li>
   <li>Bash</li>
+  <li>Docker</li>
+  <li>Quagga</li>
 </ul>
 <hr>
 
@@ -167,6 +170,7 @@
   <li>Digital VLSI Design</li>
   <li>Operating Systems</li>
   <li>Software and System Security</li>
+  <li>Security Operations</li>
 </ul>
 <h6>Undergraduate Coursework</h6>
 <ul>
@@ -182,6 +186,26 @@
 <hr>
 
 <h4>Projects</h4>
+<h6>Containerized Network | <i>Python, Docker, Quagga</i></h6>
+<p>
+    <ul>
+      <li>Instantiated a virtual network containing clients and routers with docker compose</li>
+      <li>Pre-configured Quagga routing stack defining preferred paths between hosts via docker compose</li>
+      <li>Configured OSPF link weights to determine default paths and make the network fault-tolerant to sudden removal of routers</li>
+      <li>Developed python-based software controller to edit path weights and re-route traffic dynamically</li>
+    </ul>
+</p>
+
+<h6>Ball Balancing Game | <i>Verilog, C</i></h6>
+<p>
+    <ul>
+      <li>Designed a ball game using Altera Cyclone FPGA with Quartus</li>
+      <li>Developed VGA driver to display score counter on a monitor</li>
+      <li>Created robust RS232 driver for FPGA to communicate with motor controller</li>
+      <li>Enumerated state machine with exhaustive testing suite in ModelSim</li>
+      <li>Developed functional 3D models to be 3D printed and controlled via the FPGA</li>
+    </ul>
+
 <h6>Matrix Processing Unit | <i>Verilog</i></h6>
 <p>
     <ul>
